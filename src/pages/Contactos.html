@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto e Informes | ITIID UPChiapas</title>
+    <!-- Ruta corregida para estilos -->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+    <!-- INICIO / CABECERA DE LA PÁGINA -->
+    <header class="main-header">
+        <div class="container">
+            <!-- Ruta corregida para el logo -->
+            <img src="../img/logo.png" alt="Logo de UPChiapas" class="logo-img">
+            <nav class="main-nav">
+                <a href="../index.html">Inicio</a>
+                <a href="PlandeEstudio.html">Plan de Estudios</a>
+                <a href="Contactos.html" class="active">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Solicitar Información</h2>
+            <p>Déjanos tus datos y un asesor se pondrá en contacto contigo para resolver todas tus dudas sobre el proceso de admisión.</p>
+            
+            <form id="form-contacto" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="juan.perez@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="961 123 4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">¿Tienes alguna duda en específico?</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <div class="form-group">    
+                    <label for="prepa">Preparatoria de procedencia</label>
+                    <select id="prepa" name="preparatoria" required>
+                        <option value="" disabled selected>Selecciona tu prepa</option>
+                        <option value="cobach">COBACH</option>
+                        <option value="cbtis">CBTIS</option>
+                        <option value="cecyte">CECYTE</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Solicitud</button>
+            </form>
+            <div id="form-response" class="hidden-message"></div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Universidad Politécnica de Chiapas.</p>
+    </footer>
+
+    <!-- Ruta corregida para el JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
